@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu"
+
+    android:background="#8DD1C9"
+    >
+    <ImageView
+
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/menupic" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:layout_marginTop="-100dp"
+   android:orientation="vertical"
+    android:gravity="center"
+
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:visibility="gone"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:background="@color/purple_700"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content">
+
+    <include layout="@layout/toolbar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:text="پوئینت گذاری"
+        android:drawablePadding="10dp"
+        android:textSize="30dp"
+        android:background="@null"
+        android:textColor="@color/b10"
+        android:layout_marginTop="5dp"
+        android:drawableRight="@drawable/ic_baseline_add_location_alt_24"
+
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/two"
+        android:text="بازارگردی همکاران"
+        android:textSize="30dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_storefront_24"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/three"
+        android:text="مشاهده مشتریان"
+        android:textSize="30dp"
+        android:background="@null"
+        android:textColor="@color/b10"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/four"
+        android:text="بروز رسانی تصویر یخچال"
+        android:drawableRight="@drawable/ic_baseline_camera_enhance_24"
+        android:textSize="30dp"
+        android:drawablePadding="10dp"
+        android:background="@null"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        >
+
+    </Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/five"
+        android:text="مشاهده مشتریان فاکتور دار بدون مراجعه"
+        android:textSize="25dp"
+        android:background="@null"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/six"
+        android:text="رصد سوپروایزرین"
+        android:textSize="30dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_person_search_24"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ten"
+        android:text="رصد بازاریابان"
+        android:textSize="30dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_person_search_24"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seven"
+        android:text=" ثبت شکایات"
+        android:textSize="30dp"
+        android:background="@null"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_add_ic_call_24"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ehight"
+        android:text="وضعیت شکایات"
+        android:textSize="30dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_support_24"
+        >
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eleven"
+        android:text="گزارشات"
+        android:textSize="30dp"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_assignment_24"
+        >
+    </Button>
+
+
+
+
+
+
+    <EditText
+
+        android:id="@+id/unmenu"
+android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </EditText>
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitee"
+        android:text="خروج"
+        android:drawableRight="@drawable/ic_baseline_close_24"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:textSize="30dp"
+      android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        >
+
+
+    </Button>
+
+
+
+</RelativeLayout>

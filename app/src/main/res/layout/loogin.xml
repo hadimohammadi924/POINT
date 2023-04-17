@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCF1EE">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/linn"
+    android:background="@drawable/menupic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_above="@+id/card"
+android:layout_marginTop="-150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo2">
+
+
+
+    </ImageView>
+ 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#CDEEF3"
+        app:cardElevation="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:padding="30dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ورود به حساب کاربری" />
+
+
+            <EditText
+                android:id="@+id/l_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="نام کاربری" />
+
+            <EditText
+                android:id="@+id/l_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="رمز عبور"
+                android:inputType="numberPassword" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/forget"
+
+                android:text="مرا به خاطر بسپار"
+                android:layout_height="wrap_content">
+
+            </CheckBox>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/sign"
+                    android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/b6"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:text="ورود" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/exit"
+                    android:background="@color/b6"
+                    android:drawableRight="@drawable/ic_baseline_close_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:text="خروج" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="حساب کاربری ندارید ؟" />
+
+
+    <TextView
+        android:id="@+id/sabte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:text="ثبت نام"
+
+        android:textColor="@color/white" />
+
+
+
+
+
+
+    </LinearLayout>
+    <ProgressBar
+
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="-150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar3"
+        android:theme="@style/progressBarBlue"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/progressBar3"
+        android:visibility="gone"
+        android:id="@+id/animation_view2"
+        android:layout_width="150dp"
+        android:layout_marginTop="-200dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/milk" />
+    <TextView
+        android:layout_below="@id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/waite"
+
+        android:text="لطفا منتظر بمانید"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/samane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/linn"
+       android:layout_marginTop="-40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="سامانه جامع مدیریت بازار" />
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".report">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/menupic" />
+
+
+<LinearLayout
+    android:orientation="vertical"
+  android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/rtitle"
+        android:text="گزارشات"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_baseline_assignment_24">
+    </TextView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+android:layout_gravity="center"
+        android:text="فروشگاه های شناسایی شده"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="40dp"
+        android:drawableRight="@drawable/ic_baseline_gps_fixed_24"
+      >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rtpoint"
+            android:text="تعداد کل"
+
+            android:layout_margin="15dp"
+            android:textSize="19dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rpoint"
+            android:layout_margin="15dp"
+            android:text="تعداد امروز"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+android:layout_gravity="center"
+        android:text="فروشگاه های مراجعه شده توسط بازاریابان"
+        android:drawableRight="@drawable/ic_baseline_storefront_24"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="40dp"
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvyt"
+            android:text="تعداد کل"
+
+            android:layout_margin="15dp"
+            android:textSize="19dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rvy"
+            android:layout_margin="15dp"
+            android:text="تعداد امروز"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:text="بازارگردی های انجام شده توسط سوپروایزرین"
+        android:drawableRight="@drawable/ic_baseline_where_to_vote_24"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="40dp"
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rtbazar"
+            android:text="تعداد کل"
+
+            android:layout_margin="15dp"
+            android:textSize="19dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rbazar"
+            android:layout_margin="15dp"
+            android:text="تعداد امروز"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+android:layout_gravity="center"
+        android:text="شکایات های ثبت شده"
+        android:drawableRight="@drawable/ic_baseline_record_voice_over_24"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/b10"
+        android:layout_marginTop="40dp"
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rttiket"
+            android:text="تعداد کل"
+
+            android:layout_margin="15dp"
+            android:textSize="19dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rtiket"
+            android:layout_margin="15dp"
+            android:text="تعداد امروز"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/b10">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

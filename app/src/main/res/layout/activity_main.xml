@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:context=".MainActivity">
+
+
+
+
+            //header//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginTop="15dp"
+
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_700"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="فرم پوینت گذاری مشتریان"
+                    android:textColor="@color/white"
+
+                    android:textSize="35sp">
+
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            //هدر صفحه//
+
+
+
+
+            //نوع مرکز//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نوع مرکز" />
+
+                    <EditText
+                        android:id="@+id/type"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radiotype"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+
+                        <RadioButton
+                            android:id="@+id/RT1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="سوپرمارکت"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RT2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="هایپرمارکت"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RT3"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="رستوران و فست فود"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RT4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="آبمیوه و بستنی فروشی"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RT5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="دکه بیمارستان و خیابان"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RT6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="لبنیات سنتی"></RadioButton>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            //نوع مرکز//
+
+
+
+
+            //نام مرکز//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نام مرکز" />
+
+                    <EditText
+                        android:id="@+id/cust1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سرپرست" />
+
+                    <EditText
+                        android:id="@+id/name1"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                    />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            //نام مرکز//
+
+
+
+            //اطلاعات مرکز//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="موبایل" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تلفن" />
+
+                    <EditText
+                        android:id="@+id/tell1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            //اطلاعات مرکز//
+
+
+
+
+            //نوع همکاری//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نوع همکاری با پگاه" />
+
+                    <EditText
+                        android:id="@+id/typeRel1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <RadioGroup
+                        android:id="@+id/radiorel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:id="@+id/RR1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="دارایی"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RR2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="ویزیتوری"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RR3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="گرم"></RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/RR4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="عدم همکاری"></RadioButton>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //نوع همکاری//
+
+
+
+            //گرید//
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="گرید" />
+
+                    <EditText
+                        android:id="@+id/power"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کد پگاه" />
+
+                    <EditText
+                        android:id="@+id/pgcode"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="id record" />
+
+                    <EditText
+                        android:id="@+id/id"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //گرید//
+
+
+
+
+            //نقشه
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="18dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="25dp">
+
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".APIRetrofit">
+
+                    <org.neshan.mapsdk.MapView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_marker" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="focusOnUserLocation"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@id/map"
+                        app:layout_constraintEnd_toEndOf="@id/map"
+                        app:srcCompat="@drawable/ic_my_location" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvAddressHolder"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="24dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="16dp"
+
+                        app:cardElevation="8dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.5"
+                            android:scaleY="0.5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/addressTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:includeFontPadding="false"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/latt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:includeFontPadding="false"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </androidx.cardview.widget.CardView>
+            //نقشه
+
+
+
+
+            //مختصات//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="long" />
+
+                    <EditText
+                        android:id="@+id/x2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lat" />
+
+                    <EditText
+                        android:id="@+id/x1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //مختصات//
+
+
+            //ادرس//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ادرس" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //ادرس//
+
+
+            //زمان و مکان//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زمان" />
+
+                    <EditText
+                        android:id="@+id/time"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تاریخ" />
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //زمان و مکان//
+
+
+            //دوربین //
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <Button
+                        android:id="@+id/camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="'عکس سردرب'" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            //دوربین //
+
+
+            //ادرس عکس سردرب//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ادرس تصویر سردرب"
+                        tools:ignore="DuplicateIds" />
+
+                    <EditText
+                        android:id="@+id/url"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //ادرس عکس سردرب//
+
+
+            //ثبت کننده//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ثبت کننده" />
+
+                    <EditText
+                        android:id="@+id/un"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            //ثبت کننده//
+
+
+            //Button CRUD
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="حذف" />
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="تغییر" />
+
+                    <Button
+                        android:id="@+id/read"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="مشاهده رکوردها" />
+
+                    <Button
+                        android:id="@+id/create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="ایجاد مشتری" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            //Button CRUD
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.767"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.911" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

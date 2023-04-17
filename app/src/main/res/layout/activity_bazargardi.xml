@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/purple_500">
+
+
+
+
+    <ScrollView
+        android:background="@drawable/menupic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+           //total//
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //first//
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                //header//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/b16"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="فرم بازارگردی مشتریان"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+
+                        android:textSize="35sp">
+
+
+                    </TextView>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bid"
+                        android:visibility="gone"></EditText>
+                </androidx.cardview.widget.CardView>
+                //header//
+
+                //نام و نوع//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="نوع مرکز"
+
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp">
+                        </TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbtypee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="نام مرکز"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+                        <EditText
+                            android:id="@+id/bbname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint=" نام مرکز"></EditText>
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //نام و نوع//
+
+
+                //سرپرست و تلفن//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="نام سرپرست"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp">
+                        </TextView>
+                        <EditText
+                            android:id="@+id/bbsarparast"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="سرپرست"></EditText>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="تلفن"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <EditText
+                            android:id="@+id/bbtell"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="تلفن کاری"></EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="سوپروایزر"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbsoper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //سرپرست و تلفن//
+
+
+
+                //نوع همکاری و گرید//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="نوع همکاری"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp">
+                        </TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbrel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="گرید"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbgrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //نوع همکاری و گرید//
+
+                //کد پگاه و نام ویزیتور راننده//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/bbcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="کد پگاه"></EditText>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="ویزیتور"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbvisitor"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="موزع"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbrannade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //کد پگاه و نام ویزیتور راننده//
+
+
+
+
+                //رضایت از ویزیتور و توزیع//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="رضایت از ویزیتور"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp">
+                        </TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbrezayatv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="رضایت از توزیع"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"></TextView>
+                        <Spinner
+                            android:padding="10dp"
+                            android:id="@+id/bbrezayattoo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/b10"
+                            android:gravity="center"></Spinner>
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //رضایت از ویزیتور و توزیع//
+
+                //درخواست یا پیام فروشنده به پگاه//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="درخواست یا پیام فروشنده به پگاه"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp">
+                        </TextView>
+                        <EditText
+                            android:id="@+id/bbdarkhast"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="درخواست یا پیام فروشنده به پگاه را بنویسید"></EditText>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //درخواست یا پیام فروشنده به پگاه//
+
+                //توصیه کارشناس در مورد عملکرد ویزیتور//
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="توصیه کارشناس به ویزیتور مسیر"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp">
+                        </TextView>
+                        <EditText
+                            android:id="@+id/bbtoosiye"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="توصیه و نظر خود را جهت بهبود عملکرد بازاریاب بنویسید"></EditText>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //توصیه کارشناس در مورد  عملکرد ویزیتور//
+
+
+
+                //نظر کارشناس در مورد فروشگاه //
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/purple_200"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="نظر کارشناس در مورد فروشگاه"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp">
+                        </TextView>
+                        <EditText
+                            android:id="@+id/bbnazar"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="توصیف کلی در مورد فروشگاه و موارد خاص را بنویسید"></EditText>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                //نظر کارشناس در مورد فروشگاه //
+
+
+
+
+
+            </LinearLayout>
+            //first//
+
+
+
+            //brand//
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_200"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/teal_700"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:text="گروه شیر پاستوریزه"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/b10"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:text="گروه خامه"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_200"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/purple_200"
+                                android:textColor="@color/black"
+                                android:text="گروه شیراستریل یک لیتری ساده و طعم دار"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/b10"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:text="گروه کره"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_200"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/purple_200"
+                                android:text="گروه شیر200ساده و طعم دار"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/b10"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:textColor="@color/black"
+                                android:text="گروه ماست دبه و لیوانی"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_200"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/purple_200"
+                                android:text="انواع پنیر"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/b10"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:textColor="@color/black"
+                                android:text="گروه دوغ بطری"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_200"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b11"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/purple_200"
+                                android:text="گروه دوغ نایلونی"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginTop="25dp"
+
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/b10"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/b10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/b10"
+                                android:text="گروه آبمیوه"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/purple_200"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spiner28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g1"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g2"
+                                android:gravity="center"></Spinner>
+
+                            <Spinner
+                                android:id="@+id/spiner30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/g3"
+                                android:gravity="center"></Spinner>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            //brand//
+
+
+
+            //نقشه
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="18dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="25dp">
+
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".APIRetrofit">
+
+                    <org.neshan.mapsdk.MapView
+                        android:id="@+id/bmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_marker" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="focusOnUserLocation"
+                        app:fabSize="mini"
+                        app:layout_constraintBottom_toBottomOf="@id/map"
+                        app:layout_constraintEnd_toEndOf="@id/map"
+                        app:srcCompat="@drawable/ic_my_location" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvAddressHolder"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="24dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingStart="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="16dp"
+
+                        app:cardElevation="8dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:scaleX="0.5"
+                            android:scaleY="0.5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/baddressTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:ellipsize="end"
+                                android:gravity="right"
+                                android:includeFontPadding="false"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/blatt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:ellipsize="end"
+                                android:gravity="left"
+                                android:includeFontPadding="false"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </androidx.cardview.widget.CardView>
+            //نقشه
+
+
+
+
+            //مختصات//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="long" />
+
+                    <EditText
+                        android:id="@+id/bbx2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lat" />
+
+                    <EditText
+                        android:id="@+id/bbx1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="12dp" />
+
+                    <Button
+                        android:id="@+id/bone"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/btwo"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //مختصات//
+
+
+            //ادرس//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ادرس" />
+
+                    <EditText
+                        android:id="@+id/bbaddress"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //ادرس//
+
+
+            //زمان و مکان//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زمان" />
+
+                    <EditText
+                        android:id="@+id/bbtime"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تاریخ" />
+
+                    <EditText
+                        android:id="@+id/bbdate"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //زمان و مکان//
+
+
+            //دوربین //
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <Button
+                        android:id="@+id/bcamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="'عکس یخچال'" />
+
+                    <ImageView
+                        android:id="@+id/bimageView"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/ic_launcher_background" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            //دوربین //
+
+
+            //ادرس عکس یخچال//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ادرس تصویر یخچال"
+                        tools:ignore="DuplicateIds" />
+
+                    <EditText
+                        android:id="@+id/bbyakhurl"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textSize="10sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //ادرس عکس یخچال//
+
+
+            //ثبت کننده//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ثبت کننده" />
+
+                    <EditText
+                        android:id="@+id/bbun"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            //ثبت کننده//
+
+
+
+
+            //Button CRUD
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/bdelete"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="حذف" />
+
+                    <Button
+                        android:id="@+id/bupdate"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="تغییر" />
+
+                    <Button
+                        android:id="@+id/bread"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="مشاهده رکوردها" />
+
+                    <Button
+                        android:id="@+id/bcreate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="ارسال اطلاعات" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            //Button CRUD
+
+
+
+
+
+        </LinearLayout>
+        //total//
+
+    </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

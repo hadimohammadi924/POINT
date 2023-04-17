@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menupic"
+    android:textColor="@color/white"
+    tools:context=".resadbazargardi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/menupic"
+
+        android:id="@+id/layoutActionBarResadVList"
+        android:layout_height="230dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/oneee"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="لیست فعالیت سوپروایزرین"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_below="@+id/oneee"
+            android:id="@+id/ttwoo"
+            android:drawableRight="@drawable/ic_baseline_edit_calendar_24"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="تاریخ"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_below="@+id/ttwoo"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:id="@+id/ttodaycount"
+                android:layout_centerHorizontal="true"
+                android:drawableRight="@drawable/ic_baseline_cloud_done_24"
+                android:padding="10dp"
+                android:text="بازارگردی امروز: "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:id="@+id/ttotalcount"
+                android:drawableRight="@drawable/ic_baseline_library_add_24"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="بازارگری کل: "
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-80dp"
+
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/layoutActionBarResadVList"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="#DAEAEF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rresadvisitor2R"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menupic"
+    tools:context=".vyakh">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_marginTop="80dp"
+            android:id="@+id/c_code"
+            android:layout_gravity="center"
+
+            android:textColor="@color/white"
+            android:hint="کد مشتری را وارد کنید "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <TextView
+            android:id="@+id/namecust"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textColor="@color/white"
+            android:hint="نام مشتری "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/adviseee"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:hint="توصیخ بازاریاب"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/fcodee"
+android:visibility="gone"
+            android:layout_margin="25dp"
+            android:textColor="@color/white"
+            android:hint="کد مشتری را وارد کنید "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+
+        <EditText
+            android:id="@+id/description5"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:hint="توضیحات لازم یا موارد خاص را بیان کنید"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/send"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/ic_baseline_cloud_upload_24"
+            android:drawablePadding="10dp"
+            android:text="ارسال اطلاعات"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:id="@+id/vyakh"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_cloud_upload_24"
+            android:drawableRight="@drawable/ic_baseline_camera_enhance_24"
+            android:text=" بروزرسانی تصویر یخچال و ارسال"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

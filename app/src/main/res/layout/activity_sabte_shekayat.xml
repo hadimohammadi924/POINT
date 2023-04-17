@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".sabte_shekayat">
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/menupic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //total//
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            //first//
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                //header//
+
+                <EditText
+                    android:id="@+id/s_un"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    ></EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:text="فرم ثبت شکایات"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="35sp">
+
+
+                </TextView>
+
+
+                //header//
+
+
+                //نوع شکایت//
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/shcategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+
+                        android:gravity="center"
+                        android:padding="10dp"></Spinner>
+
+
+                </LinearLayout>
+
+
+                //نوع شکایت//
+
+                //متن اصلی شکایت//
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/shtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:gravity="center"
+                        android:hint="عنوان کلی شکایت را بنویسید"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"></EditText>
+
+
+                </LinearLayout>
+
+
+                //متن اصلی شکایت//
+
+                //متن کامل شکایت//
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="9dp"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:text="متن کلی شکایت"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:visibility="gone"></TextView>
+
+                    <EditText
+                        android:id="@+id/shdescrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+
+                        android:hint="متن کامل شکایت را کامل بنویسید"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/b10"></EditText>
+
+
+                </LinearLayout>
+
+
+                //متن کامل شکایت//
+
+
+                //نام ویزیتور و موزع//
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Spinner
+                        android:id="@+id/shvisitor"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:padding="10dp"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/shtozi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:padding="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/shresponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/shresponseuser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/shstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+
+                    </TextView>
+                </LinearLayout>
+
+
+                //نام ویزیتور و موزع//
+
+
+                //اطلاعات تماس گیرنده//
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/shcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:hint="کد مشتری پگاه"
+                        android:padding="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="14sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/shname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:hint="نام تماس گیرنده"
+                        android:padding="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="14sp"></EditText>
+
+                    <EditText
+                        android:id="@+id/shtell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:hint="تلفن تماس گیرنده"
+                        android:padding="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="14sp"></EditText>
+
+
+                </LinearLayout>
+
+
+                //اطلاعات تماس گیرنده//
+
+
+            </LinearLayout>
+            //first//
+
+
+            //ادرس//
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                app:cardBackgroundColor="@color/purple_200"
+                app:cardCornerRadius="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/shaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ادرس فروشگاه یا محل تماس"
+
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/tresponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="جوابیه"
+                        android:textAlignment="center"
+
+                        android:visibility="gone"></EditText>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            //ادرس//
+
+            //فوریت//
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/prirority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+
+                    android:gravity="center"
+                    android:padding="10dp"></Spinner>
+
+
+            </LinearLayout>
+
+
+            //فوریت//
+
+            //Button CRUD
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="5dp"
+               android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/shcreate"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_baseline_cloud_upload_24"
+                    android:drawablePadding="5dp"
+                    android:text="ثبت اطلاعات"
+                    android:textColor="@color/b10"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            //Button CRUD
+
+            <TextView
+                android:id="@+id/hh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+
+        </LinearLayout>
+        //total//
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/brooot"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_margin="5dp"
+
+        app:cardBackgroundColor="#3F91A5"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_marginRight="1dp"
+
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_logo4" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/resadvname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                android:textColor="@color/white"
+                android:text=" کاربر : "
+                android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/vcount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/ic_baseline_add_chart_24"
+                    android:textColor="@color/white"
+                    android:text=" تعداد فروشگاه های بازدید شده امروز: "
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/vtotalcount"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/ic_baseline_add_business_24"
+                    android:textColor="@color/white"
+                    android:text="تعداد فروشگاه های بازدید شده کل: "
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/vftime"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="زمان اولین فعالیت ثبت شده امروز: "
+                android:drawableRight="@drawable/ic_baseline_access_time_24"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/vltime"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:drawableRight="@drawable/ic_baseline_more_time_24"
+                android:text="زمان آخرین فعالیت ثبت شده امروز:"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
